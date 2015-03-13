@@ -20,6 +20,7 @@ Marionette.Renderer = {
     var output = "";
 
     try{
+      // nunjucks will be the global object defined in nunjucks-slim.js
       output = nunjucks.render(template, data);
       return output;
     }
